@@ -1,0 +1,73 @@
+@import '../../styles/main.scss';
+.fullPage {
+  display: flex;
+  .leftImg {
+    width: 50vw;
+    max-width: 700px;
+    height: 100vh;
+
+    @include lg {
+      display: none;
+    }
+  }
+  .right {
+    width: 100%;
+    height: 100vh;
+    background-color: $wb-001;
+    .return {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      span {
+        font-size: 30px;
+        padding: 15px 50px;
+        cursor: pointer;
+        color: $main-002;
+        &:hover {
+          color: $main-004;
+        }
+      }
+    }
+    .main {
+      padding: 200px 50px 0 50px;
+      .title {
+        font-size: 50px;
+        color: $main-001;
+        img {
+          width: 30px;
+          height: 30px;
+          margin-right: 15px;
+        }
+      }
+      .input {
+        margin-top: 30px;
+        input[placeholder='Name'] {
+          margin-top: 15px;
+        }
+        input[placeholder='Password'] {
+          margin-top: 15px;
+        }
+      }
+      .wrapper {
+        width: 100%;
+        margin-top: 20px;
+      }
+      .register {
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 200px;
+        text-align: start;
+        color: rgba($main-001, 0.4);
+        span {
+          font-weight: bold;
+          margin-left: 10px;
+          cursor: pointer;
+          color: $main-002;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
