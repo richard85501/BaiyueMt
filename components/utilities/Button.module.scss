@@ -1,0 +1,67 @@
+@import '../../styles/main.scss';
+
+.button {
+  // font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial,
+  //   sans-serif;
+  font-weight: 700;
+  line-height: 1;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 0;
+  border-radius: 3em;
+}
+
+.button {
+  &--primary {
+    color: $wb-000;
+    background-color: $main-002;
+    &:hover {
+      background-color: rgba($main-002, 0.8);
+    }
+  }
+  &--secondary {
+    font-weight: 100;
+    color: $wb-000;
+    border: 0;
+    border-radius: 10px;
+    background-color: $main-004;
+    &:hover {
+      background-color: rgba($main-004, 0.8);
+    }
+  }
+  &--tertiary {
+    font-weight: bold;
+    color: $main-001;
+    border: 0;
+    border-radius: 30px;
+    background-color: $wb-000;
+    &:hover {
+      color: $wb-000;
+      background-color: $main-002;
+    }
+  }
+}
+
+.button {
+  &--small {
+    font-size: 12px;
+    padding: 10px 16px;
+  }
+  &--medium {
+    font-size: 14px;
+    padding: 10px 15px 10px 12px;
+  }
+  &--large {
+    font-size: 16px;
+    padding: 10px 24px;
+  }
+  &--pureIcon {
+    padding: 3px;
+  }
+  &--disabled {
+    pointer-events: none;
+    color: white;
+    background-color: gray;
+  }
+}
