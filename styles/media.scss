@@ -1,0 +1,42 @@
+$media-extraSmall: 0; //extra-small
+$media-small: 576px; //small
+$media-medium: 768px; //Medium
+$media-large: 991px; //Large
+$media-extraLarge: 1200px; //Extra large
+$media-superLarge: 1400px; //Extra extra large
+
+@mixin xs {
+  @media (max-width: $media-small) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (max-width: $media-small) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (max-width: $media-medium) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (max-width: $media-large) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (max-width: $media-extraLarge) {
+    @content;
+  }
+}
+
+@mixin xxl {
+  @media (min-width: $media-superLarge) {
+    @content;
+  }
+}
