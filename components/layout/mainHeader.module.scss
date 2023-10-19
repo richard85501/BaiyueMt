@@ -1,0 +1,44 @@
+@import '../../styles/main.scss';
+
+.center {
+  display: flex;
+  align-items: center;
+  .nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    .logo {
+      margin-right: auto;
+      margin-left: 15px;
+      img {
+        width: 30px;
+        height: 45px;
+      }
+    }
+    .wrapper {
+      margin-right: 15px;
+    }
+    .login {
+      font-size: 16px;
+      padding: 15px;
+      cursor: pointer;
+      transition: 0.5s;
+      .loginIcon {
+        font-weight: bold;
+        padding: 10px 15px;
+        color: $main-001;
+        border: 1px solid $main-001;
+        border-radius: 30px;
+        &:hover {
+          color: $wb-001;
+          border-color: $wb-001;
+          background-color: $main-002;
+        }
+        .text {
+          font-weight: bold;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
